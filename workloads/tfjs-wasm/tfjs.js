@@ -60,7 +60,7 @@ function _interopRequireWildcard(obj, nodeInterop) {
     return newObj;
 }
 
-const WASM_TFJS_DIR = './wasm/';
+const WASM_TFJS_DIR = './workloads/tfjs-wasm/';
 const loadAndPredict_mobilenet = async () => {
     // -------------- Load pre-trained mobilenet model --------------
     if (!models.mobilenet_v3) {

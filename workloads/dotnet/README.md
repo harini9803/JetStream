@@ -2,7 +2,7 @@
 
 Tests [.NET on WebAssembly](https://github.com/dotnet/runtime). This benchmark tests operations
 on .NET implementation of String, JSON serialization, specifics of .NET exceptions and computation
-of a 3D scene using Mono Interpreter & AOT. Source code: [.NET](wasm/dotnet)
+of a 3D scene using Mono Interpreter & AOT. Source code: [.NET](workloads/dotnet)
 
 ## The Benchmark
 

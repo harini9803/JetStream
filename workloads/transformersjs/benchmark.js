@@ -79,7 +79,7 @@ class Benchmark {
     
       env.allowRemoteModels = false;
       env.allowLocalModels = true;
-      env.localModelPath = './transformersjs/build/models/';
+      env.localModelPath = './workloads/transformersjs/build/models/';
 
       // Always select the Wasm backend, nothing else.
       delete env.backends.onnx.webgl;
@@ -99,7 +99,7 @@ class Benchmark {
         // The ONNX runtime module is dynamically imported relative to the 
         // Transformers.js module above, hence strip the prefix.
         // With preloading, this is an (absolute) blob URL, so the replace is a nop.
-        mjs: JetStream.preload.onnxJsModule.replace('./transformersjs/build/', './')
+        mjs: JetStream.preload.onnxJsModule.replace('./workloads/transformersjs/build/', './')
       };
       // Give it the wasmBinary directly instead of a path, such that the
       // ONNX runtime uses asynchronous (not streaming) Wasm instantiation.

@@ -38,9 +38,9 @@ function module() {
       zlibModule = await zlibPromise;
       return zlibModule;
     }
-    load('wasm/zlib/build/zlib.js');
+    load('workloads/zlib-wasm/build/zlib.js');
     zlibPromise = setupModule({
-      wasmBinary: new Int8Array(read('wasm/zlib/build/zlib.wasm', "binary")),
+      wasmBinary: new Int8Array(read('workloads/zlib-wasm/build/zlib.wasm', "binary")),
     });
     zlibModule = await zlibPromise;
     return zlibModule;

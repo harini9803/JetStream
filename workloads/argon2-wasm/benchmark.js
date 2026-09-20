@@ -65,7 +65,7 @@ const mCost = 1024;
 const parallelism = 1;
 // There are three argon2 types (modes), but they all exercise the same computational kernel,
 // so we chose the recommended one from a security standpoint.
-// See wasm/argon2/include/argon2.h for the enum:
+// See workloads/argon2-wasm/include/argon2.h for the enum:
 // typedef enum Argon2_type {
 //   Argon2_d = 0,
 //   Argon2_i = 1,
